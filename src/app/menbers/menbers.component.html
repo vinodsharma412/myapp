@@ -1,0 +1,32 @@
+<p>
+  menbers works!
+</p>
+
+
+
+<ul >
+  <li *ngFor="let i of arr"><a routerLink="/product">{{i}}</a><br></li>
+</ul>
+
+<p *ngIf="isTrue">Hello ngif</p>
+
+
+
+<p *ngIf="isTrue; else tmp">Hello ngif else ture value</p>
+<ng-template #tmp >Hello ngif else false value</ng-template>
+  
+
+<p *ngIf="isTrue; then tmp1 else tmp2">Hello ngif else ture value</p>
+<ng-template #tmp1 >Hello ngif then else true value</ng-template>
+<ng-template #tmp2 >Hello ngif then else false value</ng-template>
+ 
+
+<ul >
+    <li >{{iDate}}</li>
+    <li >{{iDate | date}}</li>
+    <li >{{iDate | date : "shortDate"}}</li>
+    <li >{{iDate | date : "fullDate"}}</li>
+    <li >{{iDate | date : "dd-MMM-yyyy"}}</li>
+    <li >{{iDate | date : "fullDate" | lowercase}}</li>
+</ul>
+  

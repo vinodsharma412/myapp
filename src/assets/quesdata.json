@@ -1,0 +1,34 @@
+[
+    {
+      "qes": ["name","what is your name"],
+      "ans": "vin chatbot"
+    },
+    {
+      "qes": ["table"],
+      "ans": "<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='robots' content='noindex, nofollow'><title>Condensed table example - Bootsnipp.com</title><meta name='viewport' content='width=device-width, initial-scale=1'><link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css' rel='stylesheet' id='bootstrap-css'><style type='text/css'></style><script src='//code.jquery.com/jquery-1.11.1.min.js'></script><script src='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js'></script><script type='text/javascript'>window.alert = function(){};var defaultCSS = document.getElementById('bootstrap-css');function changeCSS(css){if(css) $('head > link').filter(':first').replaceWith('<link rel='stylesheet' href=''+ css +'' type='text/css' />');else $('head > link').filter(':first').replaceWith(defaultCSS);}$( document ).ready(function() {var iframe_height = parseInt($('html').height());window.parent.postMessage( iframe_height, 'https://bootsnipp.com');});</script></head><body><div class='container'><div class='row'><div class='span5'><table class='table table-striped table-condensed'><thead><tr><th>Username</th><th>Date registered</th><th>Role</th><th>Status</th></tr></thead><tbody><tr><td>Donna R. Folse</td><td>2012/05/06</td><td>Editor</td><td><span class='label label-success'>Active</span></td></tr><tr><td>Emily F. Burns</td><td>2011/12/01</td><td>Staff</td><td><span class='label label-important'>Banned</span></td></tr><tr><td>Andrew A. Stout</td><td>2010/08/21</td><td>User</td><td><span class='label'>Inactive</span></td></tr><tr><td>Mary M. Bryan</td><td>2009/04/11</td><td>Editor</td><td><span class='label label-warning'>Pending</span></td></tr><tr><td>Mary A. Lewis</td><td>2007/02/01</td><td>Staff</td><td><span class='label label-success'>Active</span></td></tr></tbody></table></div></div></div><script type='text/javascript'></script></body></html>" 
+    },
+    {
+      "qes": ["donut"],
+      "ans": "<object class='img-responsive' data='https://cdn.dribbble.com/users/43591/screenshots/620671/pie.png'></object>"
+    },
+    {
+      "qes": ["line"],
+      "ans": "<object class='img-responsive' data='https://angularscript.com/wp-content/uploads/2014/11/angular-chart.js-Line-Chart.jpg'></object>"
+    },
+    {
+      "qes": ["speed"],
+      "ans": "<object  class='img-responsive' data='https://raw.githubusercontent.com/palerdot/react-d3-speedometer/HEAD/speedo.gif'></object>"
+    },
+    {
+      "qes": ["html"],
+      "ans": "<object width='750' height='300'  data='http://www.chartjs.org/samples/latest/tooltips/custom-line.html'></object>"
+    },
+    {
+      "qes": ["html2"],
+      "ans": "<object width='750' height='550'   data='http://www.chartjs.org/samples/latest/legend/point-style.html'></object>"
+    },
+    {
+      "qes": ["form"],
+      "ans": "<object width='750' height='550'   data='https://bootsnipp.com/iframe/D2v11'></object>"
+    }
+  ]

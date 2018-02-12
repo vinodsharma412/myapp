@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<form  
+[formGroup] = "form"
+(ngSubmit) = "onSubmit(form.value)"
+>
+
+<p *ngIf="isTrue; then tmp1 else tmp2"></p>
+<ng-template #tmp1 >
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }} {{ obj.name }} {{obj.id}} !
+  </h1>
+</div>
+
+<a routerLink="/member">Member</a><br>
+<a routerLink="/product">Product</a><br>
+<a routerLink="/converter">Converter</a><br>
+<a routerLink="/chatbot">Chatbot</a><br>
+
+<router-outlet></router-outlet>
+</ng-template>
+
+<ng-template #tmp2>
+
+  <input type="text" name="txtfirstname" placeholder="firstname"  formControlName="txtfirstname" ><br>
+  <input type="password" name="txtpassword" placeholder="*******" formControlName="txtpassword" ><br>
+  <input type="submit" value="Signin" [disabled]="!form.valid" >
+
+</ng-template>
+
+
+</form>

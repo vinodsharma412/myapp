@@ -1,0 +1,14 @@
+
+<div class="main">
+  <h1>Product's List</h1>
+  <div  class="addItem">
+    <input #input1 [(ngModel)] = "newitem"  type="text" placeholder="New Product" class="addText" /> 
+    <button (click)="pushItem()"  class="addButton">Add</button>
+  </div>  
+  <ul>
+    <li *ngFor="let i of items.sort(); let iCount = index ">
+      {{i | uppercase }} {{i | lowercase }}
+      <span (click)="removeItem(iCount)">x</span
+      ></li>
+  </ul>
+</div>

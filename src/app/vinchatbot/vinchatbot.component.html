@@ -1,0 +1,41 @@
+
+
+<div class="chat_window">
+  <div class="top_menu">
+    <div class="buttons">
+      <div class="button close"></div>
+      <div class="button minimize"></div>
+      <div class="button maximize"></div>
+    </div>    
+    <div class="title">vin Chatbot</div>        
+    <input type="button"  class="btn-button" (click)="askClear()" value="Clear" />  
+    
+  </div>
+  <div class="message_template">
+      <ul class="messages"  #div1 >
+        <li  *ngFor="let question of listOfQuestions; let i = index;">
+            <div class="message right appeared" *ngIf="question.qes">
+                <div class="avatar"></div>
+                <div class="text_wrapper">
+                  <div class="text">{{question.qes}}</div>
+                </div>
+              </div>
+        <div class="message left appeared">
+          <div class="avatar"></div>
+          <div class="text_wrapper">
+            <div class="text"  [innerHtml]="question.ans" ></div>
+          </div>
+        </div>        
+      </li>    
+      </ul>
+    </div>
+    
+  <div class="bottom_wrapper clearfix">
+    <div class="message_input_wrapper">
+      <input autocomplete="off" #input1 [(ngModel)]="newQuestion" name="newQuestion" class="message_input" placeholder="Type your message here..."        autofocus>
+    </div>          
+      <button type="submit" id="btnsubmit"  class="send_message" (click)="askQuestion()">Send</button>          
+  </div>
+</div>
+
+
