@@ -1,4 +1,4 @@
-//mongodb://vinodsharma412:vinodsharma412@ds127536.mlab.com:27536/myappdb
+
 
 const express = require('express');
 const router = express.Router();
