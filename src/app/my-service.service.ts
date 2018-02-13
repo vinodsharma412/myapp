@@ -11,12 +11,6 @@ export class MyServiceService {
   constructor(private http: Http) { 
 
     
-    //var Mongodb = require('mongodb');
-
-/*     Mongodb.connect("mongodb://vinodsharma412:vinodsharma@412@ds127536.mlab.com:27536/myappdb", function(err, client) {      
-      console.log("mongodb Connected successfully to server");        
-      client.close();
-     }); */
 
 
   }
@@ -29,7 +23,7 @@ export class MyServiceService {
    fetchDatafromAPI(parma)  {
       
     //this.url ="../assets/quesdata.json";
-    this.url ="https://api.mlab.com/api/1/databases/myappdb/collections/tblQuestionAnswer?q={'qes':'"+ parma +"'}&apiKey=gNkCK7X8ffmDmOaP4Lb8GD4gH95EDUva";
+    this.url ="https://api.mlab.com/api/1/databases/myappdb/collections/tblQuestionAnswer?q={'qes':'"+ parma +"'}&apiKey=?";
 
     return  this.http.get(this.url)
       .map(res => res.json())
