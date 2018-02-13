@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router();
 const MongoClient = require('mongodb').MongoClient;
 
-const url = 'mongodb://vinodsharma412:vinodsharma412@ds127536.mlab.com:27536/myappdb';
+const url = 'mongodb://?:?@ds127536.mlab.com:27536/myappdb';
 // Connect
 const connection = (closure) => {
     return MongoClient.connect(url, (err, db) => {
