@@ -30,7 +30,7 @@ export class VinchatbotComponent implements OnInit {
     //   }
     //   );
 
-    // this.http.get('https://api.mlab.com/api/1/databases/myappdb/collections/tblQuestionAnswer?apiKey=gNkCK7X8ffmDmOaP4Lb8GD4gH95EDUva') 
+    // this.http.get('https://api.mlab.com/api/1/databases/myappdb/collections/tblQuestionAnswer?apiKey=?') 
     // .map(res => res.json())
     // .subscribe(
     //   data => {
