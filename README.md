@@ -10,14 +10,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Key word
 `following keyword are return output and else ans not found!`<br>
-name or what is your name
-
-donut
-
-speed
-
-line
-
-html
-
+name or what is your name<br>
+donut<br>
+speed<br>
+line<br>
+html<br>
 html2
